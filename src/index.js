@@ -77,6 +77,12 @@ export { default as Keyid } from './type/keyid';
 export { default as Oid } from './type/oid';
 
 /**
+ * @see module:type/ecdh_symkey
+ * @name module:openpgp.EcdhSymmetricKey
+ */
+export { default as EcdhSymmetricKey } from './type/ecdh_symkey';
+
+/**
  * @see module:encoding/armor
  * @name module:openpgp.armor
  */
