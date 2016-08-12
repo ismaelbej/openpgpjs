@@ -20,6 +20,7 @@
 /**
  * @requires crypto/public_key/elliptic/curve
  * @requires crypto/public_key/elliptic/ecdsa
+ * @requires crypto/public_key/elliptic/ecdh
  * @module crypto/public_key/elliptic
  */
 
@@ -27,8 +28,10 @@
 
 import {get, generate} from './curves.js';
 import ecdsa from './ecdsa.js';
+import ecdh from './ecdh.js';
 
 module.exports = {
+  ecdh: ecdh,
   ecdsa: ecdsa,
   get: get,
   generate: generate
