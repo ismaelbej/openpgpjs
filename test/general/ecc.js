@@ -209,4 +209,19 @@ describe('Elliptic Curve Cryptography', function () {
       });
     });
   });
+  it('Generate key pair', function (done) {
+    var options = {
+      userIds: {name: "Hamlet (secp256k1)", email: "hamlet@example.net"},
+      curve: "secp256k1",
+      passphrase: "ophelia"
+    };
+    openpgp.generateKey(options).then(function (keyPair) {
+      expect(keyPair).to.exist;
+      expect(keyPair.key).to.exist;
+      expect(keyPair.key.primaryKey).to.exist;
+      expect(keyPair.privateKeyArmored).to.exist;
+      expect(keyPair.publicKeyArmored).to.exist;
+      done();
+    });
+  });
 });
