@@ -4,4 +4,5 @@ describe('Crypto', function () {
   require('./random.js');
   require('./crypto.js');
   require('./rfc3394.js');
+  require('./pkcs5.js');
 });
