@@ -83,6 +83,12 @@ export { default as Oid } from './type/oid';
 export { default as EcdhSymmetricKey } from './type/ecdh_symkey';
 
 /**
+ * @see module:type/kdf_params
+ * @name module:openpgp.KdfParams
+ */
+export { default as KdfParams } from './type/kdf_params';
+
+/**
  * @see module:encoding/armor
  * @name module:openpgp.armor
  */
